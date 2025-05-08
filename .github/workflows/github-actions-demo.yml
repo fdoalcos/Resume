@@ -2,11 +2,11 @@ name: Github Actions Demo
 run-name: ${{ github.actor }} is testing out Github Actions
 on: [push]
 jobs:
-	Explore-Github-Actions:
-		runs-on: ubuntu-latest
-		steps:
-			- run: echo "The jobs was automatically triggered by a ${{ github.event_name }}"
-			- run: echo "This job is now running on a ${{ runner.os }} server hosted by github"
-			- run: echo "The name of your branch is ${{ github.ref }} and your repo name is ${{ github.repository }}"
-			- run: echo "The job's status is ${{ job.status }}"
+  Explore-Github-Actions:
+    runs-on: ubuntu-latest		
+    steps:
+      - run: echo "The jobs was automatically triggered by a ${{ github.event_name }}"
+      - run: echo "This job is now running on a ${{ runner.os }} server hosted by github"
+      - run: echo "The name of your branch is ${{ github.ref }} and your repo name is ${{ github.repository }}"
+      - run: echo "The job's status is ${{ job.status }}"
 
