@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Francis Alcos – Resume</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
       color: #333;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
+      margin: 0;
+      padding: 20px;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       background: #fff;
-      padding: 30px;
+      padding: 40px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+    h1, h2 {
+      color: #2c3e50;
+    }
     .section {
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
     .section-title {
+      font-size: 20px;
+      font-weight: bold;
       border-bottom: 2px solid #ddd;
-      margin-bottom: 10px;
       padding-bottom: 5px;
-      font-size: 1.4em;
+      margin-bottom: 10px;
     }
     ul {
       padding-left: 20px;
@@ -37,54 +38,89 @@
     li {
       margin-bottom: 6px;
     }
+    .contact-info p {
+      margin: 4px 0;
+    }
+    .job-title {
+      font-weight: bold;
+    }
+    .job-date-location {
+      font-style: italic;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Francis Alcos</h1>
-    <p><strong>Email:</strong> francis@example.com<br>
-       <strong>GitHub:</strong> github.com/francisalcos<br>
-       <strong>LinkedIn:</strong> linkedin.com/in/francisalcos</p>
-
-    <div class="section">
-      <div class="section-title">Education</div>
-      <p><strong>University of Massachusetts Boston</strong><br>
-      B.S. in Computer Science – Expected 2026</p>
+    <div class="contact-info">
+      <p>Boston, MA • Francis.Alcos001@gmail.com • +1 (978) 404-2544</p>
+      <p>GitHub • LinkedIn • Portfolio</p>
     </div>
 
     <div class="section">
-      <div class="section-title">Experience</div>
-      <p><strong>Software Engineer Intern – LinkedIn</strong><br>
-      May 2024 – Aug 2024</p>
+      <div class="section-title">Education</div>
+      <p><strong>University of Massachusetts Boston</strong>, Boston, MA<br />
+      Bachelor of Science in Computer Science – <em>Expected May 2026</em><br />
+      <strong>Relevant Coursework:</strong> Object-Oriented Programming, Data Structures and Algorithms, Databases</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <p><strong>Languages:</strong> Go, Python, JavaScript, TypeScript, Java, C, SQL, HTML, CSS<br />
+      <strong>Frameworks:</strong> Node.js, Django, Flask, React.js, Vue.js, TensorFlow, MySQL, PostgreSQL, SASS, Bootstrap, Tailwind CSS<br />
+      <strong>Technologies:</strong> Git, GitHub, Docker, Kubernetes, AWS, Jira, Postman, Cloud Forge, Lucidchart, Figma, SonarQube</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+
+      <p class="job-title">Software Engineer Intern – Datadog (Mosaic Blocks - Backend)</p>
+      <p class="job-date-location">Jan 2025 – Apr 2025 • New York, NY</p>
       <ul>
-        <li>Improved document ad creation time from 5s to 0.5s using a fast-rendering live preview.</li>
-        <li>Increased weekly document ad creation from 33k to 40k; M generated weekly.</li>
+        <li>Built centralized config system in Go with gRPC and PostgreSQL, reducing deployment overhead by 30%.</li>
+        <li>Created versioning system for Graph Gateway (Node.js, GraphQL Mesh), reducing breaking changes across 10+ services.</li>
+        <li>Shipped 2 backend projects and authored 5+ onboarding/debugging docs.</li>
+        <li>Led weekly demos and tech deep dives across engineering teams.</li>
       </ul>
 
-      <p><strong>Software Engineer Intern – Liberty Mutual</strong><br>
-      Jan 2023 – Apr 2023</p>
+      <p class="job-title">Software Engineer Intern – LinkedIn (Ad-formats - Full-Stack)</p>
+      <p class="job-date-location">May 2024 – Aug 2024 • Sunnyvale, CA</p>
       <ul>
-        <li>Developed full-stack features using Vue.js and Node.js for internal insurance tools.</li>
+        <li>Built a live ad preview with mobile/desktop support, reducing load time from 5s to 0.5s.</li>
+        <li>Used Java for backend logic and Ember.js for live updates.</li>
+        <li>Integrated GraphQL and Rest.li data models for seamless data access.</li>
+        <li>Collaborated with PMs and designers to ship feature to 2M+ advertisers.</li>
+      </ul>
+
+      <p class="job-title">University Research Assistant – UMass Boston</p>
+      <p class="job-date-location">Sep 2023 – Feb 2024 • Boston, MA</p>
+      <ul>
+        <li>Created algorithm visualization app using React.js and Graphviz.</li>
+        <li>Debugged CUDA kernels and implemented GPU-based CUDA C code.</li>
+      </ul>
+
+      <p class="job-title">Software Engineer Intern – Liberty Mutual</p>
+      <p class="job-date-location">Jun 2023 – Aug 2023 • Portsmouth, NH</p>
+      <ul>
+        <li>Built Vue.js components and backend features in Node.js.</li>
+        <li>Integrated AWS S3 and increased data access efficiency by 10%.</li>
+        <li>Increased test coverage from 35.7% to 100% with Python unit tests.</li>
+        <li>Collaborated in Agile team with Jira, standups, and code reviews.</li>
       </ul>
     </div>
 
     <div class="section">
       <div class="section-title">Projects</div>
       <ul>
-        <li><strong>Traffic Sign Recognition</strong> – 96% accuracy using CNN with TensorFlow.</li>
-        <li><strong>Networking Web App</strong> – Built a Twitter-like app with Django and PostgreSQL.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title">Skills</div>
-      <ul>
-        <li>Languages: Python, JavaScript, SQL, C++</li>
-        <li>Frameworks: React, Django, Node.js</li>
-        <li>Tools: Git, Docker, VS Code</li>
+        <li><strong>Traffic Sign Recognition:</strong> CNN in Python/TensorFlow with 96% accuracy on 42 signs.</li>
+        <li><strong>Networking Platform:</strong> Twitter-style site with follow/comment (Django, JS).</li>
+        <li><strong>Mail Service:</strong> Gmail-like email app with send/receive/reply (Django, JS).</li>
+        <li><strong>Online Auction:</strong> eBay-like platform with listings and bidding (Django, SQL).</li>
       </ul>
     </div>
   </div>
 </body>
 </html>
+
 
