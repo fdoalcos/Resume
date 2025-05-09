@@ -4,6 +4,7 @@ on:
       - main
 
 name: "Trigger: Push action"
+run-name: Shellcheck action
 permissions: {}
 
 jobs:

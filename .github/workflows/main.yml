@@ -1,5 +1,5 @@
 on: [push]
-
+run-name: javascript workflow
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
